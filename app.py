@@ -11,11 +11,11 @@ import plotly.express as px
 # ===============================
 def get_connection():
     return psycopg2.connect(
-        host="localhost",
-        dbname="postgres",
-        user="postgres",
-        password="manan",
-        port=5433
+        host=st.secrets["postgres"]["host"],
+        dbname=st.secrets["postgres"]["dbname"],
+        user=st.secrets["postgres"]["user"],
+        password=st.secrets["postgres"]["password"],
+        port=st.secrets["postgres"]["port"]
     )
 
 # ===============================
