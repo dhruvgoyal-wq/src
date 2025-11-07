@@ -6,7 +6,7 @@ import psycopg2
 import pandas as pd
 from datetime import datetime
 import re
-from src.insights import lead_insights_dashboard
+from insights import lead_insights_dashboard
 import plotly.express as px
 
 # ===============================
