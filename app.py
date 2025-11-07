@@ -1,12 +1,12 @@
 import streamlit as st
 import psycopg2
-import sys, os
-sys.path.append(os.path.dirname(__file__))
+# import sys, os
+# sys.path.append(os.path.dirname(__file__))
 
 import pandas as pd
 from datetime import datetime
 import re
-from insights import lead_insights_dashboard
+from src.insights import lead_insights_dashboard
 import plotly.express as px
 
 # ===============================
